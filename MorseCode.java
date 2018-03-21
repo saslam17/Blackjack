@@ -34,11 +34,24 @@ public class MorseCode {
 		map.put("-.--", 'y');
 		map.put("--..", 'z');
 
-		String s = ".... . .-.. .-.. --- .";
-		
-		System.out.println(Arrays.toString((s.split(" "))));
+		String s1 = ".... . .-.. .-.. --- / -.. .- .. .-.. -.-- / .--. .-. --- --. .-. .- -- -- . .-. / --. --- --- -.. / .-.. ..- -.-. -.- / --- -. / - .... . / -.-. .... .- .-.. .-.. . -. --. . ... / - --- -.. .- -.—";
+
+				
+		String[] myArray2  = s1.split(" / ");		
 		StringBuilder sb = new StringBuilder(" ");
 		StringBuilder sb2 = new StringBuilder();
+		
+		for (int j =0; j<myArray2.length; j++) {
+			
+		}
+			for (int i = 0; i <myArray2[i].length(); i++) {
+				sb.append(map.get(myArray2[j][i]) );	
+			
+		}
+				
+		String s = ".... . .-.. .-.. ---";
+		System.out.println(Arrays.toString((s.split(" "))));
+		
 		String[] myArray = s.split(" ");
 		for (int i = 0; i <myArray.length; i++) {
 			sb.append(map.get(myArray[i]) );
